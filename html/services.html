@@ -1,0 +1,411 @@
+<!-- /*
+* Based on Template: Tour by Untree.co
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="NaroEx">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="Маршрут автобусной экскурсии по Наро-Фоминску — 8 остановок за 3 часа" />
+  <meta name="keywords" content="Наро-Фоминск, экскурсия, маршрут, автобус" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/daterangepicker.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Маршрут экскурсии &mdash; Наро-Фоминск</title>
+</head>
+
+<body>
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0">НароЭкс <span class="text-primary">.</span></a>
+
+        <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+          <li><a href="index.html">Главная</a></li>
+          <li class="active"><a href="services.html">Маршрут</a></li>
+          <li><a href="about.html">О городе</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+
+        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="hero hero-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">Маршрут экскурсии</h1>
+            <p class="text-white">8 остановок &bull; 3 часа &bull; Комфортабельный автобус &bull; Профессиональный гид</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Route overview -->
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title text-center mb-3">Обзор маршрута</h2>
+          <p>Наша автобусная экскурсия проведёт вас по самым значимым местам Наро-Фоминска. Вы увидите величественные храмы, посетите музеи, прогуляетесь по набережной реки Нара и познакомитесь с уникальным лофт-кварталом на месте исторической фабрики.</p>
+        </div>
+      </div>
+      <div class="row align-items-stretch">
+        <div class="col-lg-4 order-lg-1">
+          <div class="h-100"><div class="frame h-100"><div class="feature-img-bg h-100" style="background-image: url('images/museum.jpg');"></div></div></div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1" >
+          <div class="feature-1 d-md-flex">
+            <div class="align-self-center">
+              <span class="flaticon-house display-4 text-primary"></span>
+              <h3>Сбор группы</h3>
+              <p class="mb-0">Площадь у ж/д станции Нара. Отправление в 10:00.</p>
+            </div>
+          </div>
+          <div class="feature-1 ">
+            <div class="align-self-center">
+              <span class="flaticon-restaurant display-4 text-primary"></span>
+              <h3>Обед включён</h3>
+              <p class="mb-0">Остановка в ресторане &laquo;Мануфактура&raquo; или кафе &laquo;Паприка&raquo;.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3" >
+          <div class="feature-1 d-md-flex">
+            <div class="align-self-center">
+              <span class="flaticon-mail display-4 text-primary"></span>
+              <h3>Фотоостановки</h3>
+              <p class="mb-0">Время для фото у каждого объекта. Гид подскажет лучшие ракурсы.</p>
+            </div>
+          </div>
+          <div class="feature-1 d-md-flex">
+            <div class="align-self-center">
+              <span class="flaticon-phone-call display-4 text-primary"></span>
+              <h3>Завершение</h3>
+              <p class="mb-0">Возвращение к станции Нара к 13:00.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Route stops -->
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2 class="section-title text-center mb-3">Остановки маршрута</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Stop 1 -->
+        <div class="col-6 col-md-6 col-lg-3 mb-4">
+          <div class="media-1">
+            <a href="images/nikolsky_sobor.jpg" class="d-block mb-3" data-fancybox="route"><img src="images/nikolsky_sobor.jpg" alt="Никольский собор" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <span class="badge badge-primary mb-2">Остановка 1</span>
+                <h3><a href="#">Никольский собор</a></h3>
+                <p>Главный православный храм города, архитектурная доминанта Наро-Фоминска. Построен в неорусском стиле, является духовным центром города на протяжении веков.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Stop 2 -->
+        <div class="col-6 col-md-6 col-lg-3 mb-4">
+          <div class="media-1">
+            <a href="images/museum.jpg" class="d-block mb-3" data-fancybox="route"><img src="images/museum.jpg" alt="Музей" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <span class="badge badge-primary mb-2">Остановка 2</span>
+                <h3><a href="#">Краеведческий музей</a></h3>
+                <p>Основан 9 мая 1973 г. Свыше 25 000 экспонатов. История края от древних поселений до наших дней. Расположен на ул. Маршала Жукова, 8.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Stop 3 -->
+        <div class="col-6 col-md-6 col-lg-3 mb-4">
+          <div class="media-1">
+            <a href="images/hero-slider-1.jpg" class="d-block mb-3" data-fancybox="route"><img src="images/hero-slider-1.jpg" alt="Музей Кантемировской дивизии" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <span class="badge badge-primary mb-2">Остановка 3</span>
+                <h3><a href="#">Музей Кантемировской дивизии</a></h3>
+                <p>Музей боевой славы 4-й гвардейской танковой дивизии. Более 3 600 экспонатов: техника, вооружение, документы, фотографии.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Stop 4 -->
+        <div class="col-6 col-md-6 col-lg-3 mb-4">
+          <div class="media-1">
+            <a href="images/hero-slider-4.jpg" class="d-block mb-3" data-fancybox="route"><img src="images/hero-slider-4.jpg" alt="Стела" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <span class="badge badge-primary mb-2">Остановка 4</span>
+                <h3><a href="#">Стела &laquo;Город воинской славы&raquo;</a></h3>
+                <p>Монументальная стела на площади Победы, установленная после присвоения городу почётного звания в 2009 году.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Stop 5 -->
+        <div class="col-6 col-md-6 col-lg-3 mb-4">
+          <div class="media-1">
+            <a href="images/hero-slider-5.jpg" class="d-block mb-3" data-fancybox="route"><img src="images/hero-slider-5.jpg" alt="Емеля" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <span class="badge badge-primary mb-2">Остановка 5</span>
+                <h3><a href="#">Скульптура &laquo;Емеля на печи&raquo;</a></h3>
+                <p>Металлическая фигура героя сказки на ул. Маршала Жукова. У печки разные колёса &mdash; от автомобиля, мотоцикла, вертолёта и телеги.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Stop 6 -->
+        <div class="col-6 col-md-6 col-lg-3 mb-4">
+          <div class="media-1">
+            <a href="images/hero-slider-2.jpg" class="d-block mb-3" data-fancybox="route"><img src="images/hero-slider-2.jpg" alt="Fabrik" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <span class="badge badge-primary mb-2">Остановка 6</span>
+                <h3><a href="#">Лофт-квартал &laquo;Fabrik&raquo;</a></h3>
+                <p>Реновация Шёлковой фабрики XIX века по проекту голландского бюро Mei architects. 44 лофта, потолки до 7,5 м. Набережная Нары.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Stop 7 -->
+        <div class="col-6 col-md-6 col-lg-3 mb-4">
+          <div class="media-1">
+            <a href="images/hero-slider-3.jpg" class="d-block mb-3" data-fancybox="route"><img src="images/hero-slider-3.jpg" alt="Набережная" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <span class="badge badge-primary mb-2">Остановка 7</span>
+                <h3><a href="#">Набережная реки Нара</a></h3>
+                <p>Прогулка по благоустроенной набережной и Парку Победы. Бобруйский сквер со скульптурой бобра &mdash; подарок города-побратима.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Stop 8 -->
+        <div class="col-6 col-md-6 col-lg-3 mb-4">
+          <div class="media-1">
+            <a href="images/hero_1.jpg" class="d-block mb-3" data-fancybox="route"><img src="images/hero_1.jpg" alt="Парк" class="img-fluid"></a>
+            <div class="d-flex">
+              <div>
+                <span class="badge badge-primary mb-2">Остановка 8</span>
+                <h3><a href="#">Парк им. Воровского</a></h3>
+                <p>Историческое место бывшей усадьбы князей Щербатовых. Детские площадки, верёвочный парк, спорткомплекс &laquo;Нара&raquo;.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2 class="section-title text-center mb-3">Стоимость</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="p-5 bg-light rounded-20 text-center">
+            <h3 class="mb-3">Взрослый</h3>
+            <div class="mb-4">
+              <span class="display-4 font-weight-bold">1 200 &#8381;</span>
+            </div>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2">Автобусный тур 3 часа</li>
+              <li class="mb-2">Профессиональный гид</li>
+              <li class="mb-2">Вход в музеи</li>
+              <li class="mb-2">Фотоостановки</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-block">Записаться</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="p-5 bg-primary rounded-20 text-center text-white">
+            <h3 class="mb-3 text-white">Семейный</h3>
+            <div class="mb-4">
+              <span class="display-4 font-weight-bold">3 000 &#8381;</span>
+            </div>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2">2 взрослых + 2 ребёнка</li>
+              <li class="mb-2">Автобусный тур 3 часа</li>
+              <li class="mb-2">Профессиональный гид</li>
+              <li class="mb-2">Вход в музеи</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-white text-white btn-block">Записаться</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="p-5 bg-light rounded-20 text-center">
+            <h3 class="mb-3">Школьный / льготный</h3>
+            <div class="mb-4">
+              <span class="display-4 font-weight-bold">700 &#8381;</span>
+            </div>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2">Школьники, студенты, пенсионеры</li>
+              <li class="mb-2">Автобусный тур 3 часа</li>
+              <li class="mb-2">Профессиональный гид</li>
+              <li class="mb-2">Вход в музеи</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-block">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="py-5 cta-section">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h2 class="mb-2 text-white">Ближайшие экскурсии &mdash; каждые выходные</h2>
+          <p class="mb-4 lead text-white text-white-opacity">Суббота и воскресенье, отправление в 10:00 от ж/д станции Нара</p>
+          <p class="mb-0"><a href="contact.html" class="btn btn-outline-white text-white btn-md font-weight-bold">Записаться</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="inner first">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="widget">
+              <h3 class="heading">О проекте</h3>
+              <p>Автобусная экскурсия по Наро-Фоминску &mdash; проект, посвящённый знакомству жителей и гостей города с его богатой историей и достопримечательностями.</p>
+            </div>
+            <div class="widget">
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 pl-lg-5">
+            <div class="widget">
+              <h3 class="heading">Страницы</h3>
+              <ul class="links list-unstyled">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Маршрут</a></li>
+                <li><a href="about.html">О городе</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="widget">
+              <h3 class="heading">Полезное</h3>
+              <ul class="links list-unstyled">
+                <li><a href="#">Яндекс Такси</a></li>
+                <li><a href="#">Ж/д станция Нара</a></li>
+                <li><a href="#">Киевское шоссе</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="widget">
+              <h3 class="heading">Контакты</h3>
+              <ul class="list-unstyled quick-info links">
+                <li class="email"><a href="#">info@naroex.ru</a></li>
+                <li class="phone"><a href="#">+7 (496) 234-56-78</a></li>
+                <li class="address"><a href="#">г. Наро-Фоминск, ул. Маршала Жукова, 2</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner dark">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Экскурсия по Наро-Фоминску. Шаблон &mdash; <a href="https://untree.co" class="link-highlight">Untree.co</a> (CC BY 3.0)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
+
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

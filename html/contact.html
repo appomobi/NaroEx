@@ -1,0 +1,302 @@
+<!-- /*
+* Based on Template: Tour by Untree.co
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="NaroEx">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="Контакты и запись на автобусную экскурсию по Наро-Фоминску" />
+  <meta name="keywords" content="Наро-Фоминск, экскурсия, контакты, запись" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/daterangepicker.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Контакты &mdash; Экскурсия по Наро-Фоминску</title>
+</head>
+
+<body>
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0">НароЭкс <span class="text-primary">.</span></a>
+
+        <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Маршрут</a></li>
+          <li><a href="about.html">О городе</a></li>
+          <li class="active"><a href="contact.html">Контакты</a></li>
+        </ul>
+
+        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="hero hero-inner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="intro-wrap">
+            <h1 class="mb-0">Контакты</h1>
+            <p class="text-white">Запишитесь на экскурсию или задайте вопрос &mdash; мы ответим в течение дня.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h2 class="section-title mb-4">Записаться на экскурсию</h2>
+          <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="fname">Имя</label>
+                  <input type="text" class="form-control" id="fname">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="lname">Фамилия</label>
+                  <input type="text" class="form-control" id="lname">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="phone">Телефон</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="+7 (___) ___-__-__">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="email">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="people">Количество человек</label>
+                  <input type="number" class="form-control" id="people" min="1" max="40" value="1">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="date">Желаемая дата</label>
+                  <select class="form-control custom-select" id="date">
+                    <option value="">Выберите дату</option>
+                    <option>Ближайшая суббота</option>
+                    <option>Ближайшее воскресенье</option>
+                    <option>Другая дата</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="text-black" for="message">Комментарий</label>
+              <textarea name="" class="form-control" id="message" cols="30" rows="4" placeholder="Есть дети, нужна льготная цена, особые пожелания..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg">Отправить заявку</button>
+          </form>
+        </div>
+        <div class="col-lg-5 ml-auto">
+          <h2 class="section-title mb-4">Как с нами связаться</h2>
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-house"></span>
+            <address class="text">
+              г. Наро-Фоминск, ул. Маршала Жукова, 2<br>
+              <small>Место сбора: площадь у ж/д станции Нара</small>
+            </address>
+          </div>
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-phone-call"></span>
+            <address class="text">
+              +7 (496) 234-56-78<br>
+              <small>Пн&ndash;Пт 9:00&ndash;18:00, Сб&ndash;Вс 8:00&ndash;14:00</small>
+            </address>
+          </div>
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-mail"></span>
+            <address class="text">
+              info@naroex.ru
+            </address>
+          </div>
+
+          <hr class="my-4">
+
+          <h3 class="mb-3">Как добраться</h3>
+          <p><strong>На электричке:</strong> с Киевского вокзала Москвы до станции Нара (~1,5 часа). Экскурсия стартует прямо от станции.</p>
+          <p><strong>На автомобиле:</strong> по Киевскому шоссе (М3), 70 км от МКАД. Бесплатная парковка у станции.</p>
+          <p><strong>Местное такси:</strong></p>
+          <ul class="list-unstyled">
+            <li>Яндекс Такси: +7 (495) 999-99-99</li>
+            <li>Такси &laquo;Вест&raquo;</li>
+            <li>Ситимобил: +7 (495) 222-22-22</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="untree_co-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-6 text-center">
+          <h2 class="section-title text-center mb-3">Часто задаваемые вопросы</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="mb-4">
+            <h4>Нужно ли бронировать заранее?</h4>
+            <p>Да, рекомендуем записаться хотя бы за 2 дня до экскурсии. Группы ограничены &mdash; до 40 человек.</p>
+          </div>
+          <div class="mb-4">
+            <h4>Подходит ли экскурсия для детей?</h4>
+            <p>Конечно! Экскурсия интересна для всех возрастов. Дети особенно любят скульптуру &laquo;Емеля на печи&raquo; и Бобруйский сквер с бобром.</p>
+          </div>
+          <div class="mb-4">
+            <h4>Что включено в стоимость?</h4>
+            <p>Автобусный тур, услуги гида, входные билеты в музеи. Обед оплачивается отдельно (от 400 &#8381;).</p>
+          </div>
+          <div class="mb-4">
+            <h4>Проводятся ли экскурсии зимой?</h4>
+            <p>Да, экскурсии проводятся круглый год. Зимой автобус тёплый, а прогулки на свежем воздухе сокращены.</p>
+          </div>
+          <div class="mb-4">
+            <h4>Можно ли заказать индивидуальную экскурсию?</h4>
+            <p>Да, свяжитесь с нами по телефону или через форму &mdash; мы подберём удобное время и программу.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="site-footer">
+    <div class="inner first">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="widget">
+              <h3 class="heading">О проекте</h3>
+              <p>Автобусная экскурсия по Наро-Фоминску &mdash; проект, посвящённый знакомству жителей и гостей города с его богатой историей и достопримечательностями.</p>
+            </div>
+            <div class="widget">
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 pl-lg-5">
+            <div class="widget">
+              <h3 class="heading">Страницы</h3>
+              <ul class="links list-unstyled">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Маршрут</a></li>
+                <li><a href="about.html">О городе</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="widget">
+              <h3 class="heading">Полезное</h3>
+              <ul class="links list-unstyled">
+                <li><a href="#">Яндекс Такси</a></li>
+                <li><a href="#">Ж/д станция Нара</a></li>
+                <li><a href="#">Киевское шоссе</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="widget">
+              <h3 class="heading">Контакты</h3>
+              <ul class="list-unstyled quick-info links">
+                <li class="email"><a href="#">info@naroex.ru</a></li>
+                <li class="phone"><a href="#">+7 (496) 234-56-78</a></li>
+                <li class="address"><a href="#">г. Наро-Фоминск, ул. Маршала Жукова, 2</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner dark">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Экскурсия по Наро-Фоминску. Шаблон &mdash; <a href="https://untree.co" class="link-highlight">Untree.co</a> (CC BY 3.0)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
+
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
