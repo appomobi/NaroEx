@@ -106,7 +106,7 @@ $(function(){
 				items: 1,
 				nav: true,
 				dots: true,
-				slideBy: 'page',
+				dotsEach: 1,
 				navText: ['<span class="icon-keyboard_backspace"></span>','<span class="icon-keyboard_backspace"></span>'],
 				responsive:{
 					0:{
