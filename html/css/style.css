@@ -604,18 +604,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       .hero h1 {
         font-size: 45px; } }
     .hero h1 .typed-words {
-      position: relative; }
-      .hero h1 .typed-words:before {
-        position: absolute;
-        height: 7px;
-        background-color: var(--accent);
-        bottom: 0;
-        left: 0;
-        right: 0;
-        content: ""; }
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      background-image: linear-gradient(var(--accent), var(--accent));
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 7px;
+      padding-bottom: 4px; }
   .hero .intro-wrap {
     position: relative;
     z-index: 1; }
+  @media (min-width: 992px) {
+    .hero .row.align-items-center .col-lg-5 {
+      align-self: flex-start; } }
   .hero .slides {
     background: #ffffff;
     max-width: 800px;
@@ -1055,6 +1056,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .rounded-20 {
   border-radius: 20px; }
 
+.owl-single .owl-item > img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%; }
+@media (max-width: 550px) {
+  .owl-single .owl-item > img {
+    height: 350px; } }
+
 .owl-dots {
   position: relative;
   margin-top: 25px; }
@@ -1367,6 +1376,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
       transform: rotate(-180deg); }
+
+.team img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%; }
 
 .team h3 {
   font-size: 20px; }

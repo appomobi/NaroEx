@@ -67,12 +67,12 @@
 			<div class="row align-items-center">
 				<div class="col-lg-7">
 					<div class="intro-wrap">
-						<h1 class="mb-5 text-shadow"><span class="d-block">Автобусная экскурсия</span> по <span class="typed-words"></span></h1>
-						<p class="mb-4 lead text-white-opacity">Откройте для себя город воинской славы, его историю, храмы, музеи и уникальные памятники. Комфортабельный автобусный тур с профессиональным гидом.</p>
+						<h1 class="mb-5"><span class="d-block">Автобусная экскурсия</span> по <span class="typed-words"></span></h1>
+						<p class="mb-4 lead" style="max-width: 550px;">Откройте для себя город воинской славы, его историю, храмы, музеи и уникальные памятники. Комфортабельный автобусный тур с профессиональным гидом.</p>
 
 						<div class="row">
 							<div class="col-12">
-								<div class="d-flex flex-wrap align-items-center mb-3 text-shadow">
+								<div class="d-flex flex-wrap align-items-center mb-3">
 									<span class="mr-4 text-white"><span class="icon-clock-o mr-2"></span>3 часа</span>
 									<span class="mr-4 text-white"><span class="icon-map mr-2"></span>8 остановок</span>
 									<span class="text-white"><span class="icon-group mr-2"></span>до 40 человек</span>
@@ -84,12 +84,10 @@
 				</div>
 				<div class="col-lg-5">
 					<div class="slides">
-						<img src="images/img_6.jpg" alt="Никольский собор" class="img-fluid active">
-						<img src="images/img_7.jpg" alt="Наро-Фоминск" class="img-fluid">
-						<img src="images/museum.jpg" alt="Краеведческий музей" class="img-fluid">
-						<img src="images/hero-slider-3.jpg" alt="Река Нара" class="img-fluid">
-						<img src="images/hero-slider-4.jpg" alt="Наро-Фоминск" class="img-fluid">
-						<img src="images/hero-slider-5.jpg" alt="Наро-Фоминск" class="img-fluid">
+						<img src="images/img_6.jpg" alt="Стела «Город воинской славы»" class="img-fluid">
+						<img src="images/img_7.jpg" alt="Мемориал Т-34" class="img-fluid">
+						<img src="images/zosim.jpg" alt="Зосимова пустынь" class="img-fluid active">
+						<img src="images/park_vorovskogo.jpg" alt="Красота Подмосковья" class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -283,6 +281,46 @@
 					</a>
 				</div>
 
+				<div class="item">
+					<a class="media-thumb" href="images/serdce_zags.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Сердце у ЗАГСа</h3>
+							<span class="location">Памятник влюблённым</span>
+						</div>
+						<img src="images/serdce_zags.jpg" alt="Сердце возле ЗАГСа" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/plotina.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Плотина шёлкокомбината</h3>
+							<span class="location">Река Нара</span>
+						</div>
+						<img src="images/plotina.jpg" alt="Плотина шёлкокомбината" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/vechniy_ogon.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Часовня и Вечный огонь</h3>
+							<span class="location">Мемориал героям</span>
+						</div>
+						<img src="images/vechniy_ogon.jpg" alt="Часовня и Вечный огонь" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/reka_nara.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Река Нара</h3>
+							<span class="location">Красота Подмосковья</span>
+						</div>
+						<img src="images/reka_nara.jpg" alt="Река Нара" class="img-fluid">
+					</a>
+				</div>
+
 			</div>
 
 		</div>
@@ -421,7 +459,7 @@
 
 				<div class="col-lg-6">
 					<figure class="img-play-video">
-						<img src="images/museum.jpg" alt="Краеведческий музей" class="img-fluid rounded-20">
+						<img src="images/food.jpg" alt="Где поесть в Наро-Фоминске" class="img-fluid rounded-20" style="width: 100%; max-height: 300px; object-fit: cover;">
 					</figure>
 				</div>
 
@@ -493,7 +531,7 @@
 			})
 
 			var typed = new Typed('.typed-words', {
-				strings: ["Наро-Фоминску.", "городу воинской славы.", "истории.", "красоте Подмосковья.", "реке Нара.", "памятникам героев."],
+				strings: ["Наро-Фоминску.","памятникам героям.","истории.", "красоте Подмосковья." ],
 				typeSpeed: 80,
 				backSpeed: 80,
 				backDelay: 4000,
@@ -501,9 +539,10 @@
 				loop: true,
 				showCursor: true,
 				preStringTyped: (arrayPos, self) => {
-					arrayPos++;
+					var total = $('.slides img').length;
+					var slideId = (arrayPos % total) + 1;
 					$('.slides img').removeClass('active');
-					$('.slides img[data-id="'+arrayPos+'"]').addClass('active');
+					$('.slides img[data-id="'+slideId+'"]').addClass('active');
 				}
 
 			});
