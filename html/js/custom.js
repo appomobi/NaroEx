@@ -8,6 +8,10 @@ $(function(){
 
 	'use strict';
 
+	$('#footer-placeholder').load('footer.html', function() {
+		$('#footer-year').text(new Date().getFullYear());
+	});
+
 	$(".loader").delay(200).fadeOut("slow");
 	$("#overlayer").delay(200).fadeOut("slow");	
 
